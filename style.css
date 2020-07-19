@@ -1,0 +1,50 @@
+body {
+    position: relative;
+    height: 100vh;
+}
+.container {
+    display: flex;
+}
+.grid {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 6px;
+    margin: auto;
+    background-color: 	#8c9966;
+}
+
+.grid div {
+    width: 150px;
+    height: 150px;
+    background-color: beige;
+    margin: auto;
+    
+}
+.field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#center {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+#button {
+    padding: 20px;
+    
+}
+.markO {
+    font-size: 60px;
+    color:  #998066;
+    
+}
+.markX {
+    font-size: 60px;
+    color: #996666;
+}
