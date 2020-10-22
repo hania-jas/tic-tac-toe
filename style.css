@@ -1,50 +1,80 @@
 body {
+    box-sizing: border-box;
     position: relative;
     height: 100vh;
+    margin: 0;
+    margin-top: 5px;
 }
+
 .container {
     display: flex;
+    margin: 0;
+    height: auto;
 }
+
 .grid {
-    width: 500px;
-    height: 500px;
+    min-width: 300px;
+    height: auto;
     display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 6px;
+    grid-template-columns: 33% 33% 33%;
     margin: auto;
-    background-color: 	#8c9966;
 }
 
 .grid div {
-    width: 150px;
-    height: 150px;
-    background-color: beige;
+    width: 7rem;
+    height: 7rem;
+    background-color: #445f51;
     margin: auto;
-    
 }
+
+#firstField,
+#secondField,
+#thirdField {
+    border: 2px solid white;
+}
+
+#fourthField,
+#fifthField,
+#sixthField,
+#seventhField,
+#eighthField,
+#ninthField {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
 .field {
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
+
 #center {
-   display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 150px;
 }
 
 #button {
+    background-color: #998066;
+    border-radius: 30px;
     padding: 20px;
-    
+    cursor: pointer;
 }
+
+#button:hover {
+    background-color: #996666;
+}
+
 .markO {
-    font-size: 60px;
-    color:  #998066;
-    
+    font-size: 80px;
+    color: #998066;
 }
+
 .markX {
-    font-size: 60px;
+    font-size: 80px;
     color: #996666;
 }
