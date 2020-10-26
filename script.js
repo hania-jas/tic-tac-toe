@@ -71,8 +71,8 @@ const isGameOver = () => {
     }
 }
 
-const startGame = () => {
-    button.innerText = 'START GAME';
+const resetGame = () => {
+    button.innerText = 'RESET GAME';
     field.forEach(field => { field.innerHTML = '' });
     computerChoice = [];
     userChoice = [];
@@ -82,4 +82,4 @@ const startGame = () => {
 
 field.forEach(field => { field.addEventListener('click', userTarget) });
 
-button.addEventListener('click', startGame);
+button.addEventListener('click', resetGame);
